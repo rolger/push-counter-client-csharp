@@ -9,18 +9,22 @@ jobs:
     - uses: actions/checkout@v1
       name: Checkout Code
 
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v1.7.2
 
     - uses: nuget/setup-nuget@v1
       with:
         nuget-version: '5.x'
  
     - name: Restore NuGet Packages
-      run: nuget restore parrot.sln
+      run: dotnet restore parrot.sln
  
-    - name: Build and Publish Web App
-      run: msbuild parrot.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+    - name: Build
+      run: dotnet build
+      
+    - name: Test
+      run: dotnet test
+      
 
   record:
     runs-on: ubuntu-latest
