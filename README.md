@@ -5,6 +5,9 @@ Can you spot any code smells in this code? I'll give you a clue - a spot of Pol(
 
 Refactor this code, take small steps, run the tests often. See how small and beautiful you can make it.
 
+
+Laszlo, Roland, Aleks, Alex, Moritz, Samanta
+
 Acknowlegements
 ---------------
 
