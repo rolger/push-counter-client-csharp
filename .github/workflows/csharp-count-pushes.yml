@@ -1,4 +1,4 @@
-name: Test Java Maven
+name: Test .Net Core
 
 on: [push, pull_request]
 
@@ -16,10 +16,10 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.2
      
     - name: Restore NuGet Packages
-      run: nuget restore SimpleFrameworkApp.sln
+      run: nuget restore parrot.sln
  
     - name: Build and Publish Web App
-      run: msbuild SimpleFrameworkApp.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+      run: msbuild parrot.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
 
   record:
     runs-on: ubuntu-latest
