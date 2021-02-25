@@ -6,8 +6,8 @@ namespace Parrot
 {
     class EuropeanParrot : Parrot
     {
-        public EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed)
-            : base(ParrotTypeEnum.EUROPEAN, numberOfCoconuts, voltage, isNailed)
+        public EuropeanParrot()
+            : base(ParrotTypeEnum.EUROPEAN, 0, 0, false)
         {
         }
 
