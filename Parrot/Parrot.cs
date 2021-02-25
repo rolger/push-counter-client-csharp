@@ -17,7 +17,7 @@ namespace Parrot
             _isNailed = isNailed;
         }
 
-        public double GetSpeed()
+        public virtual double GetSpeed()
         {
             switch (_type)
             {
