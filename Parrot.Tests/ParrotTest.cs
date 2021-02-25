@@ -8,7 +8,7 @@ namespace Parrot.Tests
         public void GetSpeedNorwegianBlueParrot_nailed()
         {
             var parrot = new Parrot(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 0, true);
-            Assert.Equal(0.0, parrot.GetSpeed());
+            Assert.Equal(1.0, parrot.GetSpeed());
         }
 
         [Fact]
