@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Parrot
 {
-    class EuropeanParrot
+    class EuropeanParrot : Parrot
     {
+        public EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed) 
+            : base(ParrotTypeEnum.EUROPEAN, numberOfCoconuts, voltage, isNailed)
+        {
+        }
     }
 }
