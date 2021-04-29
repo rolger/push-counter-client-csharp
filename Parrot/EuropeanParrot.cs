@@ -10,7 +10,7 @@ namespace Parrot
 
         public override double GetSpeed()
         {
-            return base.GetBaseSpeed();
+            return GetBaseSpeed();
         }
     }
 }
