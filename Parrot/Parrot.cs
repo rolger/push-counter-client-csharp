@@ -17,6 +17,11 @@ namespace Parrot
             _isNailed = isNailed;
         }
 
+        public static EuropeanParrot EuropeanParrot()
+        {
+            return new EuropeanParrot();
+        }
+
         public double GetSpeed()
         {
             switch (_type)

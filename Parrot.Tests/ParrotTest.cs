@@ -48,8 +48,9 @@ namespace Parrot.Tests
         [Fact]
         public void GetSpeedOfEuropeanParrot()
         {
-            var parrot = new EuropeanParrot();
+            EuropeanParrot parrot = Parrot.EuropeanParrot();
             Assert.Equal(12.0, parrot.GetSpeed());
         }
+        
     }
 }
