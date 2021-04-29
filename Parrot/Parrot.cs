@@ -31,18 +31,11 @@ namespace Parrot
         {
             switch (_type)
             {
-                case ParrotTypeEnum.AFRICAN:
-                    return GetSpeedAfrican();
                 case ParrotTypeEnum.NORWEGIAN_BLUE:
                     return _isNailed ? 0 : GetBaseSpeed(_voltage);
             }
 
             throw new Exception("Should be unreachable");
-        }
-
-        private double GetSpeedAfrican()
-        {
-            return new AfricanParrot(_numberOfCoconuts).GetSpeed();
         }
 
         private double GetBaseSpeed(double voltage)
