@@ -27,6 +27,11 @@ namespace Parrot
             return new AfricanParrot(numberOfCoconuts);
         }
 
+        public static NorwegianParrot NorwegianParrot(bool isNailed, double voltage)
+        {
+            return new NorwegianParrot(isNailed,voltage);
+        }
+
         public virtual double GetSpeed()
         {
             switch (_type)
