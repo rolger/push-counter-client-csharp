@@ -10,7 +10,7 @@ namespace Parrot
 
         internal double GetBaseSpeed()
         {
-            return GetBaseSpeed();
+            return base.GetBaseSpeed();
         }
     }
 }
