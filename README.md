@@ -4,7 +4,7 @@ This kata is inpired by [Emily Bache's Parrot Refactoring Kata](https://github.c
 
 ## Goal 
 
-The goal is achieve as many positive push events during Coding Dojo. A push event called positve, if the automatically triggered build is green i.e. it compiles and passes all unit tests. Each green build invokes a services to increase your Counter dashboard.
+The goal is achieve as many positive push events during a Coding Dojo. A push event is called positve, if the automatically triggered build is green i.e. it compiles and passes all unit tests. Each green build invokes a services to increase your Counter dashboard.
 
 ## Instructions
 
