@@ -5,7 +5,7 @@ namespace Parrot
     public class Parrot : IParrot
     {
         private readonly bool _isNailed;
-        private readonly int _numberOfCoconuts;
+        protected readonly int _numberOfCoconuts;
         private readonly ParrotTypeEnum _type;
         private readonly double _voltage;
 
@@ -22,7 +22,7 @@ namespace Parrot
             return new EuropeanParrot();
         }
 
-        public double GetSpeed()
+        public virtual double GetSpeed()
         {
             switch (_type)
             {
@@ -37,7 +37,7 @@ namespace Parrot
 
         private double GetSpeedAfrican()
         {
-            return Math.Max(0, GetBaseSpeed() - GetLoadFactor() * _numberOfCoconuts);
+            return new AfricanParrot(_numberOfCoconuts).GetSpeed();
         }
 
         private double GetBaseSpeed(double voltage)
@@ -45,7 +45,7 @@ namespace Parrot
             return Math.Min(24.0, voltage * GetBaseSpeed());
         }
 
-        private double GetLoadFactor()
+        protected double GetLoadFactor()
         {
             return 9.0;
         }
