@@ -27,12 +27,17 @@ namespace Parrot
             switch (_type)
             {
                 case ParrotTypeEnum.AFRICAN:
-                    return Math.Max(0, GetBaseSpeed() - GetLoadFactor() * _numberOfCoconuts);
+                    return GetSpeedAfrican();
                 case ParrotTypeEnum.NORWEGIAN_BLUE:
                     return _isNailed ? 0 : GetBaseSpeed(_voltage);
             }
 
             throw new Exception("Should be unreachable");
+        }
+
+        private double GetSpeedAfrican()
+        {
+            return Math.Max(0, GetBaseSpeed() - GetLoadFactor() * _numberOfCoconuts);
         }
 
         private double GetBaseSpeed(double voltage)
