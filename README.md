@@ -1,11 +1,16 @@
-Parrot Refactoring Kata
-=======================
+# Push Counter Sample Client Kata (Parrot Refactoring Kata)
 
-Can you spot any code smells in this code? I'll give you a clue - a spot of Pol(l)ymorphism should improve matters!
+This kata is inpired by [Parrot Refactoring Kata by Emily Bache](https://github.com/emilybache/Parrot-Refactoring-Kata) and [push-counter-client by Peter Kofler](https://github.com/codecop/push-counter-client).
 
-Refactor this code, take small steps, run the tests often. See how small and beautiful you can make it.
+## Goal 
 
-Acknowlegements
----------------
+The goal is achieve as many positive push events during Coding Dojo. A push event called positve, if the automatically triggered build is green i.e. it compiles and passes all unit tests. Each green build invokes a services to increase your Counter dashboard.
 
-This code is heavily inspired by one of the examples in Martin Fowler's book "Refactoring". It's a classic, and if it's not on your bookshelf already I suggest you treat yourself to a copy!
+## Instructions
+
+The facilitator of the Coding Dojo will give you the detailed instructions. 
+
+## License
+
+Copyright (c) 2021, Roland Germ. All rights reserved.
+[New BSD License](https://opensource.org/licenses/BSD-3-Clause), see `LICENSE` in repository.
