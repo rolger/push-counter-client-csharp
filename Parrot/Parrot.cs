@@ -22,7 +22,7 @@ namespace Parrot
             switch (_type)
             {
                 case ParrotTypeEnum.EUROPEAN:
-                    return GetBaseSpeed();
+                    return new EuropeanParrot().GetBaseSpeed();
                 case ParrotTypeEnum.AFRICAN:
                     return Math.Max(0, GetBaseSpeed() - GetLoadFactor() * _numberOfCoconuts);
                 case ParrotTypeEnum.NORWEGIAN_BLUE:
@@ -42,7 +42,7 @@ namespace Parrot
             return 9.0;
         }
 
-        private double GetBaseSpeed()
+        protected double GetBaseSpeed()
         {
             return 12.0;
         }
