@@ -8,12 +8,7 @@ namespace Parrot
         {
         }
 
-        public double GetSpeed()
-        {
-            return base.GetBaseSpeed();
-        }
-
-        internal double GetBaseSpeed()
+        public override double GetSpeed()
         {
             return base.GetBaseSpeed();
         }
