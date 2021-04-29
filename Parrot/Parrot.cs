@@ -22,6 +22,11 @@ namespace Parrot
             return new EuropeanParrot();
         }
 
+        public static AfricanParrot AfricanParrot(int numberOfCoconuts)
+        {
+            return new AfricanParrot(numberOfCoconuts);
+        }
+
         public virtual double GetSpeed()
         {
             switch (_type)
