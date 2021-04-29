@@ -4,10 +4,10 @@ namespace Parrot
 {
     public class Parrot : IParrot
     {
-        private readonly bool _isNailed;
+        protected readonly bool _isNailed;
         protected readonly int _numberOfCoconuts;
         private readonly ParrotTypeEnum _type;
-        private readonly double _voltage;
+        protected readonly double _voltage;
 
         public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, bool isNailed)
         {
@@ -32,13 +32,13 @@ namespace Parrot
             switch (_type)
             {
                 case ParrotTypeEnum.NORWEGIAN_BLUE:
-                    return _isNailed ? 0 : GetBaseSpeed(_voltage);
+                    return new NorwegianParrot(_isNailed, _voltage).GetSpeed();
             }
 
             throw new Exception("Should be unreachable");
         }
 
-        private double GetBaseSpeed(double voltage)
+        protected double GetBaseSpeed(double voltage)
         {
             return Math.Min(24.0, voltage * GetBaseSpeed());
         }
