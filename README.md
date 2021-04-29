@@ -1,6 +1,6 @@
 # Push Counter Sample Client Kata (Parrot Refactoring Kata)
 
-This kata is inpired by [Parrot Refactoring Kata by Emily Bache](https://github.com/emilybache/Parrot-Refactoring-Kata) and [push-counter-client by Peter Kofler](https://github.com/codecop/push-counter-client).
+This kata is inpired by [Parrot Refactoring Kata by Emily Bache](https://github.com/emilybache/Parrot-Refactoring-Kata) and by [push-counter-client by Peter Kofler](https://github.com/codecop/push-counter-client).
 
 ## Goal 
 
